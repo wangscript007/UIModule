@@ -28,5 +28,6 @@
     <dimen name="radius_alertview">15px</dimen>
     <dimen name="material_50">50dp</dimen>
     <dimen name="material_font_15">15sp</dimen>
+    <integer name="animation_default_duration">300</integer>
 
 </resources>

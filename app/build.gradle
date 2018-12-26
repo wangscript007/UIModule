@@ -19,12 +19,12 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:28.0.0'
-
-
-    //implementation 'com.github.xuantiandaozun:UIModule:0.0.1-test'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //项目基类
+    implementation 'com.github.xuantiandaozun:baseappproject:0.0.1_2'
+   // implementation 'com.github.xuantiandaozun:UIModule:0.0.1-test2'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation project(':uilibrary')
 }

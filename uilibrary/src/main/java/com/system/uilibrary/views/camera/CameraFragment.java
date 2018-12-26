@@ -9,8 +9,9 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Toast;
 
-import com.system.myproject.base.MVPBaseFragment;
-import com.system.myproject.base.MVPBasePresenter;
+
+import com.system.baseapplibrary.base.MVPBaseFragment;
+import com.system.baseapplibrary.base.MVPBasePresenter;
 import com.system.uilibrary.R;
 import com.system.uilibrary.views.camera.listener.ClickListener;
 import com.system.uilibrary.views.camera.listener.ErrorListener;
@@ -43,21 +44,7 @@ public class CameraFragment extends MVPBaseFragment {
     @Override
     public void onStart() {
         super.onStart();
-      /*  //全屏显示
-        if (Build.VERSION.SDK_INT >= 19) {
-            View decorView = getActivity().getWindow().getDecorView();
-            decorView.setSystemUiVisibility(
-                    View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-                            | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                            | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                            | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-                            | View.SYSTEM_UI_FLAG_FULLSCREEN
-                            | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
-        } else {
-            View decorView = getActivity().getWindow().getDecorView();
-            int option = View.SYSTEM_UI_FLAG_FULLSCREEN;
-            decorView.setSystemUiVisibility(option);
-        }*/
+
     }
 
     @Override
@@ -77,6 +64,25 @@ public class CameraFragment extends MVPBaseFragment {
     @Override
     protected int getLayoutResId() {
         return R.layout.activity_camera;
+    }
+
+    @Override
+    protected void refreshData(String key, Object object) {
+
+    }
+
+    @Override
+    protected void withData(String key, Object object) {
+
+    }
+    @Override
+    public void showMessage(String message) {
+
+    }
+
+    @Override
+    public void onFaild() {
+
     }
 
     @Override
@@ -145,4 +151,6 @@ public class CameraFragment extends MVPBaseFragment {
         super.onPause();
         jCameraView.onPause();
     }
+
+
 }

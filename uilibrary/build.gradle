@@ -1,0 +1,58 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+
+
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //项目基类
+    implementation 'com.github.xuantiandaozun:baseappproject:0.0.1_2'
+
+    //uiview  ui控件框架
+    api 'com.github.AriesHoo.UIWidget:widget-core:3.2.6'
+    api 'com.github.AriesHoo.UIWidget:widget-alert:3.2.5'
+    api 'com.github.AriesHoo.UIWidget:widget-collapsing:3.2.5'
+    //日期选择
+    api('com.github.gzu-liyujiang.AndroidPicker:WheelPicker:1.5.6') {
+        exclude group: 'com.android.support'
+    }
+    //图片选择器
+    api 'com.github.Awent:PhotoPick-Master:v1.096'
+    //下拉刷新框架
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14'
+    //Recycleview自适应宽布局管理器
+    api 'com.github.1002326270xc:LayoutManager-FlowLayout:v1.4'
+    //轮播图
+    api 'com.bigkoo:ConvenientBanner:2.1.4'
+    //viewpager指示器
+    api 'com.github.hackware1993:MagicIndicator:1.5.0'
+    //图片压缩框架
+    api 'com.zxy.android:tiny:0.0.6'
+
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}

@@ -14,7 +14,7 @@ import com.aries.ui.view.radius.RadiusEditText;
 import com.aries.ui.widget.action.sheet.UIActionSheetDialog;
 import com.aries.ui.widget.alert.UIAlertDialog;
 import com.aries.ui.widget.progress.UIProgressDialog;
-import com.system.myproject.utils.SizeUtil;
+import com.system.baseapplibrary.utils.SizeUtil;
 import com.system.uilibrary.R;
 
 import java.util.List;
@@ -92,7 +92,7 @@ public class UIAlerDialogTools {
         dialogText=null;
     }
 
-    public void createEdittext(onDataClickListener listener) {
+    public void createEdittext(final onDataClickListener listener) {
         if(dialogText!=null){
             final RadiusEditText editText = new RadiusEditText(context);
             ViewGroup.MarginLayoutParams params = new ViewGroup.MarginLayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
@@ -130,7 +130,7 @@ public class UIAlerDialogTools {
         }
         dialogText=null;
     }
-    public void createView(onItemClickListener listener, View view) {
+    public void createView(final onItemClickListener listener, View view) {
         if(dialogText!=null){
             UIAlertDialog uiAlertDialog = new UIAlertDialog.DividerIOSBuilder(context)
                     .setView(view)

@@ -43,7 +43,7 @@
     </LinearLayout>
 
 
-    <com.system.myproject.views.camera.CaptureLayout
+    <com.system.uilibrary.views.camera.CaptureLayout
         android:id="@+id/capture_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

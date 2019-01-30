@@ -49,7 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom" />
 
-    <com.system.myproject.views.camera.FoucsView
+    <com.system.uilibrary.views.camera.FoucsView
         android:id="@+id/fouce_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

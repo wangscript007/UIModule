@@ -47,7 +47,7 @@ dependencies {
     //轮播图
     api 'com.bigkoo:ConvenientBanner:2.1.4'
     //viewpager指示器
-    api 'com.github.hackware1993:MagicIndicator:1.5.0'
+    api 'com.github.hackware1993:MagicIndicator:1.4.2'
     //图片压缩框架
     api 'com.zxy.android:tiny:0.0.6'
     //可垂直翻、可水平翻的翻页公告

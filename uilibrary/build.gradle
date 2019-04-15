@@ -27,8 +27,8 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    //项目基类
-    implementation 'com.github.xuantiandaozun:baseappproject:0.0.1_2'
+    //项目基类依赖
+    implementation 'com.github.xuantiandaozun:basekotlin:0.0.1-t1'
 
     //uiview  ui控件框架
     api 'com.github.AriesHoo.UIWidget:widget-core:3.2.6'

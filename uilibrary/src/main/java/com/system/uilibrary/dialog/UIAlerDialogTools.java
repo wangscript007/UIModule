@@ -14,7 +14,7 @@ import com.aries.ui.view.radius.RadiusEditText;
 import com.aries.ui.widget.action.sheet.UIActionSheetDialog;
 import com.aries.ui.widget.alert.UIAlertDialog;
 import com.aries.ui.widget.progress.UIProgressDialog;
-import com.system.baseapplibrary.utils.SizeUtil;
+import com.system.mylibrary.utils.SizeUtil;
 import com.system.uilibrary.R;
 
 import java.util.List;

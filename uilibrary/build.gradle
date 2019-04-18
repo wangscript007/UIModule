@@ -46,8 +46,6 @@ dependencies {
     api 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14'
     //Recycleview自适应宽布局管理器
     // api 'com.github.1002326270xc:LayoutManager-FlowLayout:v1.4'
-    //轮播图
-    api 'com.bigkoo:ConvenientBanner:2.1.4'
     //viewpager指示器
     api 'com.github.hackware1993:MagicIndicator:1.4.2'
     //图片压缩框架

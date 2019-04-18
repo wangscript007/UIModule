@@ -1,8 +1,9 @@
 package com.system.uilibrary.views.recyclerview.decoration;
 
 import android.graphics.Rect;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * Created by ggcode on 2017/11/16.

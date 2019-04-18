@@ -3,8 +3,6 @@ package com.system.uilibrary.dialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AlertDialog;
 import android.text.TextUtils;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -20,6 +18,9 @@ import android.widget.TextView;
 import com.system.uilibrary.R;
 import com.system.uilibrary.interfaces.OnStringCallBack;
 import com.system.uilibrary.interfaces.PhotoListener;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 
 public class DialogsTools {
     private Context context;

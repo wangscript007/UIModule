@@ -28,7 +28,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     //项目基类依赖
-    implementation 'com.github.xuantiandaozun:basekotlin:0.0.1-t1'
+    implementation 'com.github.xuantiandaozun:basekotlin:0.0.1-t6'
 
     //uiview  ui控件框架
     api 'com.github.AriesHoo.UIWidget:widget-core:3.2.6'
@@ -39,11 +39,13 @@ dependencies {
         exclude group: 'com.android.support'
     }
     //图片选择器
-    api 'com.github.Awent:PhotoPick-Master:v1.096'
+    api ('com.github.Awent:PhotoPick-Master:v1.096'){
+        exclude group: 'com.android.support'
+    }
     //下拉刷新框架
     api 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14'
     //Recycleview自适应宽布局管理器
-    api 'com.github.1002326270xc:LayoutManager-FlowLayout:v1.4'
+    // api 'com.github.1002326270xc:LayoutManager-FlowLayout:v1.4'
     //轮播图
     api 'com.bigkoo:ConvenientBanner:2.1.4'
     //viewpager指示器
